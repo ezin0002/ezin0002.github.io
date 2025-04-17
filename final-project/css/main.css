@@ -1,0 +1,349 @@
+/* ===== Reset & Base Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Orbitron", sans-serif;
+    background-color: #fdfbf7;
+    color: #1e1e1e;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+  }
+  
+  a {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a:hover {
+    color: #f4d35e;
+    text-decoration: none;
+  }
+  
+  /* ===== Header ===== */
+  header {
+    background: linear-gradient(to right, #1e1e1e, #2b2b2b);
+    color: #f4f4f4;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .mt-logo {
+    background-color: #f4d35e;
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .mt-logo img {
+    max-width: 50px;
+  }
+  
+  .mt-nav {
+    background-color: #2b2b2b;
+    padding: 10px 0;
+  }
+  
+  .mt-nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .mt-nav ul li a {
+    color: #f4d35e;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 6px 12px;
+    border-radius: 4px;
+  }
+  
+  .mt-nav ul li a:hover {
+    background-color: #f4d35e;
+    color: #1e1e1e;
+  }
+  
+  .mt-nav form {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .mt-nav form input {
+    padding: 8px;
+    border: none;
+    border-radius: 6px 0 0 6px;
+    width: 200px;
+  }
+  
+  .mt-nav form button {
+    background-color: #f4d35e;
+    border: none;
+    color: #1e1e1e;
+    padding: 8px 12px;
+    border-radius: 0 6px 6px 0;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* ===== Banner ===== */
+  .banner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 60px 20px;
+    text-shadow: 1px 1px 4px #000;
+  }
+  
+  .banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -2;
+    filter: brightness(0.7);
+  }
+  
+  .banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+    z-index: -1;
+  }
+  
+  .banner h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 15px;
+  }
+  
+  .banner p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    max-width: 700px;
+  }
+  
+  .banner a {
+    background-color: #f4d35e;
+    color: #1e1e1e;
+    font-weight: bold;
+    padding: 12px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .banner a:hover {
+    background-color: #ffcb05;
+  }
+  
+  /* ===== Sections General ===== */
+  .mt-section {
+    padding: 40px 20px;
+    background-color: #fffaf0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #f4d35e;
+    margin-top: 8px;
+    border-radius: 2px;
+  }
+  
+  /* ===== About Section ===== */
+  #about {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  #about img {
+    height: 240px;
+    object-fit: cover;
+  }
+  
+  /* ===== Services ===== */
+  .service {
+    background-color: #fff9e6;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+  
+  .service h3 {
+    font-size: 1.4rem;
+    color: #333;
+  }
+  
+  .service a {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 6px 12px;
+    font-weight: 600;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  .service a:hover {
+    background-color: #333;
+  }
+  
+  /* ===== Vision Section ===== */
+  .vision {
+    position: relative;
+    height: 300px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .vision img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    filter: brightness(0.5);
+  }
+  
+  .vision a {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid #f4d35e;
+    padding: 8px 15px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 20px;
+    border-radius: 6px;
+    backdrop-filter: blur(2px);
+  }
+  
+  /* ===== Team Section ===== */
+  .team-member {
+    background-color: #fffaf0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+  
+  .team-member h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .team-member h4 {
+    font-weight: 700;
+    color: #f4d35e;
+    border-bottom: 2px solid #f4d35e;
+    display: inline-block;
+  }
+  
+  /* ===== Contact & Form ===== */
+  #contact input,
+  #contact textarea {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 10px;
+  }
+  
+  #contact button {
+    background-color: #1e1e1e;
+    color: #f4d35e;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  #contact button:hover {
+    background-color: #333;
+  }
+  
+  /* ===== Table (Hours) ===== */
+  table th {
+    background-color: #f4d35e;
+    color: #1e1e1e;
+  }
+  
+  /* ===== Map ===== */
+  .map iframe {
+    border-radius: 8px;
+    filter: grayscale(30%) contrast(1.1);
+  }
+  
+  /* ===== Footer ===== */
+  footer {
+    background-color: #1e1e1e;
+    color: #f4d35e;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
+  footer .unsplash {
+    color: #f4f4f4;
+    text-decoration: underline dotted;
+  }
+  
+  /* ===== Responsive Tweaks ===== */
+  @media (min-width: 768px) {
+    .mt-nav ul {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    #about {
+      flex-direction: row;
+    }
+  
+    #about img {
+      width: 50%;
+    }
+  
+    .team-member {
+      display: flex;
+      gap: 20px;
+    }
+  
+    .team-member img {
+      width: 40%;
+    }
+  
+    #contact {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+  }
+  
